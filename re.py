@@ -23,3 +23,12 @@ for long_com in data:
 	if len(long_com) >= 1000:
 		fil_data.append(long_com)
 print('超過1000字元的commit有', len(fil_data), '個')
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('有', len(good), '個留言有good')
+print(good[0])
+
+
